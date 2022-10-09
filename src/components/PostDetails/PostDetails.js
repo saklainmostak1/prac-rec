@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './PostDetails.css'
 
 const PostDetails = ({post}) => {
-    const {title, body} = post
+    const {title, body, id} = post
     return (
         <div className='post-details'>
-            <h1>Title: {title} </h1>
+            <h4>Title: {title} </h4>
             <p>Body: {body} </p>
-            <button>Show Details</button>
+            <Link to={`post/${id}`}>
+            show
+            </Link>
         </div>
     );
 };

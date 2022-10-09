@@ -46,7 +46,7 @@ function App() {
           return fetch('https://jsonplaceholder.typicode.com/posts')
         },
         element: <Posts></Posts>
-      }
+      },
     ] },
     {path: '/about', element: <About></About> },
     {
